@@ -1,6 +1,2 @@
-<human>
-    <name>Tom Riddle</name>
-    <age>16</age>
-    <gender>Male</gender>
-    <birth_year>1947</birth_year>
-</human>
+<?xml version='1.0' encoding='utf-8'?>
+<humans><human><name>Tom</name><age>16</age><gender>Male</gender><birth_year>1947</birth_year></human><human><name>Alice</name><age>25</age><gender>Female</gender><birth_year>1967</birth_year></human></humans>

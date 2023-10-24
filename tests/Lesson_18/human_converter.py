@@ -41,29 +41,40 @@ class Human:
         return xml_string.decode("utf-8")
 
 
-if __name__ == '__main__':
-
-    try:
-        my_human = Human("Tom Riddle", 16, "Male", 1947)
-
-        parser = argparse.ArgumentParser(description="Convert Human elem to json or xml.")
-        parser.add_argument("output_format", choices=["json", "xml"],
-                            help="Choose output format (json or xml)")
-        parser.add_argument("output_file", help="Give name to the output file")
-        args = parser.parse_args()
-
-        if args.output_format == "json":
-            json_data = my_human.convert_to_json()
-            with open(args.output_file, "w") as json_f:
-                json_f.write(json_data)
+# Зробимо так, що в файли можна буде записувати декілька "людей" одночасно
+    @staticmethod
+    def write_to_file(humans: list, output_format, output_file):
+        if output_format == "json":
+            json_data = [human.convert_to_json() for human in humans]
+            with open(output_file, "w") as json_f:
+                json_f.write(json.dumps(json_data, indent=4))  # задаємо читабельний відсут
             print(f"Data was saved to {args.output_file}")
-        elif args.output_format == "xml":
-            xml_data = my_human.convert_to_xml()
-            with open(args.output_file, "w") as xml_f:
-                xml_f.write(xml_data)
+        elif output_format == "xml":
+            root = ET.Element("humans")
+            for human in humans:
+                human_xml = ET.fromstring(human.convert_to_xml())
+                root.append(human_xml)
+            tree = ET.ElementTree(root)
+            tree.write(output_file, encoding="utf-8", xml_declaration=True)
             print(f"Data was saved to {args.output_file}")
         else:
             raise TypeError("Invalid output format. Please choose 'json' or 'xml'.")
+
+
+if __name__ == '__main__':
+
+    try:
+        parser = argparse.ArgumentParser(description="Convert human object to json or xml")
+        parser.add_argument("output_format", choices=["json", "xml"], help="Choose format: json or xml")
+        parser.add_argument("output_file", help="Give name to your file")
+        args = parser.parse_args()
+
+        my_humans = [
+            Human("Tom", 16, "Male", 1947),
+            Human("Alice", 25, "Female", 1967)
+        ]
+
+        Human.write_to_file(my_humans, args.output_format, args.output_file)
     except Exception as error:
         print(error)
 
