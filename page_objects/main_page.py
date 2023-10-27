@@ -7,7 +7,7 @@ class MainPage:
         self._page = BasePage(driver)
 
     __loc_top_logo = (
-    By.XPATH, "//aside[@class='sidebar main-menu']/following-sibling::nav/div/a")  # Верхній логотип єнота
+        By.XPATH, "//aside[@class='sidebar main-menu']/following-sibling::nav/div/a")  # Верхній логотип єнота
     __loc_biggest_header = (By.XPATH, "//h1")
     __loc_boy_top_img = (By.XPATH, "//div[starts-with(@class, 'announ')]/a/img[1]")
     __loc_wine_top_img = (By.CSS_SELECTOR, "span[class*='announ'] + img")
@@ -16,10 +16,14 @@ class MainPage:
     __loc_eng_lang = (By.XPATH, "//*[@data-locale='en']")
     __loc_patterns_btn = (By.XPATH, "//a[text()='Патерни']")
     __loc_forum_btn = (By.XPATH, "//a[text()='Форум']")
-    __word_to_find = "pattern"
-    __loc_forum_search_input = (By.XPATH, "//*[@id='search']")
-    __loc_add_topic_btn = (By.XPATH, "//*[@id='add-topic-button']")
-    __loc_new_topic_header = (By.XPATH, "(//h4[@class='modal-title'])[1]")
+    __word_to_find = "pattern"  # щоб потім доробити з iframe, коли дойдемо
+    __loc_forum_search_input = (By.XPATH, "//*[@id='search']")  # щоб потім доробити з iframe, коли дойдемо
+    __loc_add_topic_btn = (By.XPATH, "//*[@id='add-topic-button']")  # щоб потім доробити з iframe, коли дойдемо
+    __loc_new_topic_header = (By.XPATH, "(//h4[@class='modal-title'])[1]")  # щоб потім доробити з iframe, коли дойдемо
+    __loc_iframe = (By.XPATH, '//iframe[contains(@src, "//feedback")]')  # щоб потім доробити з iframe, коли дойдемо
+    __loc_email_input = (By.XPATH, "//div[@class='input-group']/input")
+    __loc_submit_email_btn = (By.XPATH, "//button[@type='submit']")
+    __loc_header_confirm = (By.XPATH, "//div[@class='text center-block']/h2")
 
     def is_top_logo_displayed(self):
         return self._page.is_displayed(self.__loc_top_logo)
@@ -58,19 +62,17 @@ class MainPage:
         self._page.wait_element_is_presence(self.__loc_patterns_btn)
         self._page.click(self.__loc_patterns_btn)
 
-    def click_forum_btn(self):
-        self._page.scroll_into_view(self.__loc_forum_btn)
-        self._page.click(self.__loc_forum_btn)
+    def click_input_email_btn(self):
+        self._page.scroll_to_element(self.__loc_email_input)
+        self._page.click_by_js(self.__loc_email_input)
 
-    def click_find_input(self):
-        self._page.click(self.__loc_forum_search_input)
-
-    def set_word_to_find(self):
-        self._page.send_keys(self.__loc_forum_search_input, self.__word_to_find)
+    def set_email(self):
+        my_email = "myemail@gmail.com"
+        self._page.send_keys(self.__loc_email_input, my_email)
         return self
 
-    def click_add_topic_btn(self):
-        self._page.click(self.__loc_add_topic_btn)
+    def click_submit_email_btn(self):
+        self._page.click_by_js(self.__loc_submit_email_btn)
 
-    def get_forum_form_header_text(self):
-        return self._page.get_text(self.__loc_new_topic_header)
+    def get_submit_header_text(self):
+        return self._page.get_text(self.__loc_header_confirm)
