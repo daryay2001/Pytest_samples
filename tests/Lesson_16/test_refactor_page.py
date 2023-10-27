@@ -2,11 +2,13 @@ import pytest
 
 
 @pytest.mark.regression
-def test_formatting_mail(open_refactor_page):
+def test_clean_code_page(open_refactor_page):
     page = open_refactor_page
-    page.click_mail_btn()
-    page.click_format_btn()
-    assert page.get_header2_btn_text() == "Заголовок 2", "Incorrect formatting name"
+    page.click_clean_code_btn()
+    clean_code_paragr = page.get_clean_code_first_paragr_text()
+    assert page._page.get_current_url() == "https://refactoring.guru/uk/refactoring/what-is-refactoring", \
+        "Incorrect clean code page url"
+    assert clean_code_paragr in page._page.get_page_source(), "No refactoring definition"
 
 
 @pytest.mark.smoke
