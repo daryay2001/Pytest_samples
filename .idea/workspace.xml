@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="commit xml files">
-      <change afterPath="$PROJECT_DIR$/page_objects/refactoring_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page_objects/store_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_16/test_refactor_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_16/test_store_page.py" afterDir="false" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Change config to json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/app_config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/configs/app_config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_objects/_base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/_base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Lesson_16/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Lesson_16/test_main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/config_reader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +42,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.pytest for test_store_page.test_show_more_btns">
-    <configuration name="pytest for test_refactor_page.test_check_code_containers_count" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_store_page.test_add_to_cart">
+    <configuration name="pytest for test_refactor_page.test_clean_code_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +55,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_refactor_page.test_check_code_containers_count&quot;" />
+      <option name="_new_target" value="&quot;test_refactor_page.test_clean_code_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -84,7 +75,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_store_page.test_check_book_info" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_refactor_page.test_home_btn" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +87,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_store_page.test_check_book_info&quot;" />
+      <option name="_new_target" value="&quot;test_refactor_page.test_home_btn&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_store_page.test_check_books_count" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_refactor_page.test_privacy_policy_page_load" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,11 +103,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_store_page.test_check_books_count&quot;" />
+      <option name="_new_target" value="&quot;test_refactor_page.test_privacy_policy_page_load&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_store_page.test_show_more_btns" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_store_page.test_add_to_cart" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,17 +119,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_store_page.test_show_more_btns&quot;" />
+      <option name="_new_target" value="&quot;test_store_page.test_add_to_cart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_store_page.test_show_more_btns" />
-        <item itemvalue="Python tests.pytest for test_store_page.test_check_book_info" />
-        <item itemvalue="Python tests.pytest for test_store_page.test_check_books_count" />
-        <item itemvalue="Python tests.pytest for test_refactor_page.test_check_code_containers_count" />
+        <item itemvalue="Python tests.pytest for test_store_page.test_add_to_cart" />
+        <item itemvalue="Python tests.pytest for test_refactor_page.test_clean_code_page" />
         <item itemvalue="Python tests.pytest for test_refactor_page.test_formatting_mail" />
+        <item itemvalue="Python tests.pytest for test_refactor_page.test_home_btn" />
+        <item itemvalue="Python tests.pytest for test_refactor_page.test_privacy_policy_page_load" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +142,23 @@
       <option name="presentableId" value="Default" />
       <updated>1696857037993</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added working tests. Version with app_config">
+      <option name="closed" value="true" />
+      <created>1698400397515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698400397515</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change config to json">
+      <option name="closed" value="true" />
+      <created>1698407475840</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698407475840</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,15 +172,9 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/Lesson_16/test_main_page.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added working tests. Version with app_config" />
+    <MESSAGE value="Change config to json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change config to json" />
   </component>
 </project>
