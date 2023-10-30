@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Change config to json">
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_19/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_19/regex_hw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,16 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hw18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kirit/PycharmProjects/Pytest_samples&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hw19",
+    "last_opened_file_path": "C:/Users/kirit/PycharmProjects/Pytest_samples",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python tests.pytest for test_store_page.test_add_to_cart">
+}]]></component>
+  <component name="RunManager">
     <configuration name="pytest for test_refactor_page.test_clean_code_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
