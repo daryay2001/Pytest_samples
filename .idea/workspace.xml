@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added local files">
-      <change afterPath="$PROJECT_DIR$/api_collections/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_collections/data_classes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_collections/data_classes/notes_dataclass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_collections/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_collections/schemas/_base_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_collections/schemas/notes_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_20/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_20/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_20/test_notes_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added local files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +40,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_notes_api.test_change_note_status">
+  <component name="RunManager">
     <configuration name="pytest for test_notes_api.test_change_note_status" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,26 +183,5 @@
     <MESSAGE value="Change config to json" />
     <MESSAGE value="added local xml files" />
     <option name="LAST_COMMIT_MESSAGE" value="added local xml files" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/Lesson_20/test_notes_api.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/Lesson_20/test_notes_api.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/Lesson_20/test_notes_api.py</url>
-          <line>114</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

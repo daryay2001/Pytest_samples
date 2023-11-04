@@ -114,7 +114,7 @@ def test_change_note_status(get_fake_note_payload_with_status):  # разобр�
     resp_change_status = NotesApi().update_note_status(note_id=updated_data["id"], data=updated_data)
     assert resp_change_status.status_code == 200, f"Request fail! {resp.text}"
     new_data = resp_change_status.json().get("data")
-    assert new_data["completed"] == data["completed"]
+    assert new_data["completed"] == data["completed"], "Incorrect completed status"
 
 
 def test_change_note_status_to_str(get_fake_note_payload_with_status):
