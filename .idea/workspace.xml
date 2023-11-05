@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added local files" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="improved test notes api">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_collections/schemas/notes_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_collections/schemas/notes_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lesson_16/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Lesson_16/test_main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lesson_20/test_notes_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Lesson_20/test_notes_api.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,16 +37,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "hw20",
-    "last_opened_file_path": "C:/Users/kirit/PycharmProjects/Pytest_samples",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kirit/PycharmProjects/Pytest_samples&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Python tests.pytest for test_main_page.test_iframe_add_forum_topic">
+    <configuration name="pytest for test_main_page.test_iframe_add_forum_topic" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Pytest_samples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_16" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_iframe_add_forum_topic&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_notes_api.test_change_note_status" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,7 +95,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_notes_api.test_post_empty_note" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_notes_api.test_get_all_notes" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,11 +107,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_post_empty_note&quot;" />
+      <option name="_new_target" value="&quot;test_notes_api.test_get_all_notes&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_notes_api.test_post_new_note_without_description" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_notes_api.test_get_all_notes_without_token" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,33 +123,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_post_new_note_without_description&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_notes_api.test_update_existing_note" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Pytest_samples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_20" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_update_existing_note&quot;" />
+      <option name="_new_target" value="&quot;test_notes_api.test_get_all_notes_without_token&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_notes_api.test_change_note_status" />
+        <item itemvalue="Python tests.pytest for test_main_page.test_iframe_add_forum_topic" />
+        <item itemvalue="Python tests.pytest for test_notes_api.test_get_all_notes_without_token" />
+        <item itemvalue="Python tests.pytest for test_notes_api.test_get_all_notes" />
         <item itemvalue="Python tests.pytest for test_notes_api.test_change_note_status_to_str" />
-        <item itemvalue="Python tests.pytest for test_notes_api.test_update_existing_note" />
-        <item itemvalue="Python tests.pytest for test_notes_api.test_post_empty_note" />
-        <item itemvalue="Python tests.pytest for test_notes_api.test_post_new_note_without_description" />
+        <item itemvalue="Python tests.pytest for test_notes_api.test_change_note_status" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698930366045</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="improved test notes api">
+      <option name="closed" value="true" />
+      <created>1699120899322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699120899323</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +196,7 @@
     <MESSAGE value="Added working tests. Version with app_config" />
     <MESSAGE value="Change config to json" />
     <MESSAGE value="added local xml files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added local xml files" />
+    <MESSAGE value="improved test notes api" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved test notes api" />
   </component>
 </project>

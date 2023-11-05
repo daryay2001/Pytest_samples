@@ -59,7 +59,7 @@ def test_post_new_note_without_description(get_fake_note_payload):
     assert resp.status_code == 400, f"Incorrect error status code {resp.text}"
 
 
-def test_post_empty_note():
+def test_post_fail_empty_note():
     payload = {}
     resp = NotesApi().post_new_note(note_data=payload)
     assert resp.status_code == 400, f"Incorrect error status code {resp.text}"
@@ -72,7 +72,7 @@ def test_delete_note_by_id(get_new_note_id):
     assert resp.status_code == HTTPStatus.OK, f"Request fail! {resp.text}"
 
 
-def test_delete_note_without_id():
+def test_page_not_found_empty_id():
     _id = ""
     resp = NotesApi().delete_note(note_id=_id)
     assert resp.status_code == 404, f"Incorrect error status code {resp.text}"
@@ -89,7 +89,7 @@ def test_delete_note_without_content_type(get_new_note_id, get_headers_without_c
     assert data["message"] == "Note successfully deleted", "Incorrect response message"
 
 
-def test_get_note_with_wrong_id(get_random_id):
+def test_get_note_fail_invalid_id(get_random_id):
     _id = get_random_id
     resp = NotesApi().get_note_by_id(note_id=_id)
     assert resp.status_code == 400, f"Incorrect error status code {resp.text}"
@@ -97,9 +97,9 @@ def test_get_note_with_wrong_id(get_random_id):
     assert er_message in resp.text, "Incorrect error message"
 
 
-def test_get_all_notes_without_token(get_headers_without_token):
+def test_auth_fail_without_token(get_headers_without_token):
     inv_headers = get_headers_without_token
-    resp = NotesApi().get_all_notes_with_custom_token(inv_headers)
+    resp = NotesApi().get_all_notes(inv_headers)
     assert resp.status_code == HTTPStatus.UNAUTHORIZED, f"Incorrect error status code {resp.text}"
     er_message = "No authentication token specified in x-auth-token header"
     assert er_message in resp.text, "Incorrect error message"
@@ -117,7 +117,7 @@ def test_change_note_status(get_fake_note_payload_with_status):  # разобр�
     assert new_data["completed"] == data["completed"], "Incorrect completed status"
 
 
-def test_change_note_status_to_str(get_fake_note_payload_with_status):
+def test_failed_status_change_to_string(get_fake_note_payload_with_status):
     payload = get_fake_note_payload_with_status
     resp = NotesApi().post_new_note(note_data=payload)
     assert resp.status_code == HTTPStatus.OK, f"Request fail! {resp.text}"

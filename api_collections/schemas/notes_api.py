@@ -17,8 +17,10 @@ class NotesApi(BaseApi):
             data["completed"] = not data["completed"]
         return data
 
-    def get_all_notes(self):
-        return self._get(url=self.__url, headers=self.__headers)
+    def get_all_notes(self, headers=None):
+        if headers is None:
+            headers = self.__headers
+        return self._get(url=self.__url, headers=headers)
 
     def get_note_by_id(self, note_id: str):
         return self._get(url=f"{self.__url}/{note_id}", headers=self.__headers)
@@ -40,14 +42,6 @@ class NotesApi(BaseApi):
     def update_note_status(self, note_id: str, data: dict):
         return self._patch(url=f"{self.__url}/{note_id}", data=json.dumps(data), headers=self.__headers)
 
-    def get_all_notes_with_custom_token(self, my_headers):
-        return self._get(url=self.__url, headers=my_headers)
-
     def delete_note_with_custom_headers(self, note_id: str, my_headers):
         return self._delete(url=f"{self.__url}/{note_id}", headers=my_headers)
 
-    @staticmethod
-    def change_completed_status(data):
-        if "completed" in data and isinstance(data["completed"], bool):
-            data["completed"] = not data["completed"]
-        return data

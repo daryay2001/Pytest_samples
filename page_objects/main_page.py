@@ -76,3 +76,19 @@ class MainPage:
 
     def get_submit_header_text(self):
         return self._page.get_text(self.__loc_header_confirm)
+
+    def click_forum_btn(self):
+        self._page.scroll_to_element(self.__loc_forum_btn)
+        self._page.click(self.__loc_forum_btn)
+
+    def add_forum_topic(self, my_word=None):
+        if my_word is None:
+            my_word = self.__word_to_find
+        try:
+            el_frame = self._page.wait_element_is_visible(self.__loc_iframe)
+            self._page.driver.switch_to.frame(el_frame)
+            self._page.send_keys(self.__loc_forum_search_input, my_word)
+            self._page.click(self.__loc_add_topic_btn)
+            return self._page.get_text(self.__loc_new_topic_header)
+        finally:
+            self._page.driver.switch_to.default_content()
