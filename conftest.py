@@ -1,5 +1,7 @@
 import json
 import pytest
+from faker import Faker
+
 from constants import ROOT_PATH
 from page_objects.main_page import MainPage
 from page_objects.patterns_page import PatternsPage
@@ -70,3 +72,9 @@ def open_patterns_page(create_driver, env):
 def open_policy_page(create_driver, env):
     create_driver.get(env.privacy_policy_url)
     return PolicyPage(create_driver)
+
+
+@pytest.fixture
+def fake():
+    fake = Faker()
+    return fake

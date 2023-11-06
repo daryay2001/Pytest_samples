@@ -59,3 +59,11 @@ def test_email_form(open_main_page):
     page.click_submit_email_btn()
     assert page.get_main_page_url() == "https://refactoring.guru/uk/sendy/subscribe", "Incorrect subscribe url"
     assert page.get_submit_header_text() == "Ви підписані!", "Incorrect confirmation"
+
+
+@pytest.mark.regression
+def test_iframe_add_forum_topic(open_main_page):
+    page = open_main_page
+    page.click_forum_btn()
+    assert page.add_forum_topic() == "Створити нову тему", "Incorrect title of the new topic form"
+    assert page.get_main_page_url() == "https://refactoring.guru/uk", "Can`t go to default page"
