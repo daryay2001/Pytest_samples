@@ -1,7 +1,9 @@
 from selenium.webdriver.common.by import By
 from page_objects._base_page import BasePage
+from utilities.deco import auto_step
 
 
+@auto_step
 class PatternsPage:
     def __init__(self, driver):
         self._page = BasePage(driver)

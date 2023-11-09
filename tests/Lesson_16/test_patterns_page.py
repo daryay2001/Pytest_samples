@@ -1,6 +1,11 @@
+import allure
 import pytest
 
 
+@allure.title("Test check creational patterns count")
+@allure.description("Go to the patterns catalog and check the count of creational patters.")
+@allure.tag("Patterns", "Count")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_creational_patterns_count(open_patterns_page):
     patterns_page = open_patterns_page
@@ -8,6 +13,10 @@ def test_creational_patterns_count(open_patterns_page):
     assert patterns_page.creational_patterns_get_count() == 5, "There should be 5 creational patterns"
 
 
+@allure.title("Test Go to abstract factory page")
+@allure.description("Go to abstract factory page via btn.")
+@allure.tag("Button", "Patterns")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_abstract_factory(open_patterns_page):
     patterns_page = open_patterns_page
@@ -19,6 +28,10 @@ def test_abstract_factory(open_patterns_page):
     assert patterns_page.get_abstract_factory_header() == "Абстрактна фабрика", "Incorrect abstract factory header"
 
 
+@allure.title("Test open book in browser")
+@allure.description("Go to the page 'Deep to patterns' and open book in the browser using btn.")
+@allure.tag("Button", "Patterns", "Book", "Browser")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_open_book_in_browser(open_patterns_page):
     patterns_page = open_patterns_page
@@ -28,6 +41,10 @@ def test_open_book_in_browser(open_patterns_page):
         "Can't open book in browser"
 
 
+@allure.title("Test check number and text of 'Go to article btns'")
+@allure.description("Open patterns page and check number and text of 'Go to article btns'")
+@allure.tag("Button", "Text", "Number", "Patterns")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_go_to_articles_btns(open_patterns_page):
     patterns_page = open_patterns_page
@@ -43,6 +60,11 @@ def test_go_to_articles_btns(open_patterns_page):
         "Incorrect pattern downsides button text"
 
 
+@allure.title("Test bridge code example is visible'")
+@allure.description("Open patterns page and go to the patterns catalog. Go to the pattern bridge page,"
+                    " choose python code example and check if it`s visible.")
+@allure.tag("Patterns", "Bridge", "Code", "Visible")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_pattern_bridge_code_example(open_patterns_page):
     pattern_page = open_patterns_page

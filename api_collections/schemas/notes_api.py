@@ -1,7 +1,9 @@
 import json
 from api_collections.schemas._base_api import BaseApi
+from utilities.deco import auto_step
 
 
+@auto_step
 class NotesApi(BaseApi):
     def __init__(self, base_url="https://practice.expandtesting.com/notes/api"):
         super().__init__(base_url)

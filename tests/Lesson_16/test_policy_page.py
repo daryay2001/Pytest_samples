@@ -1,6 +1,11 @@
+import allure
 import pytest
 
 
+@allure.title("Test check policy page header and url")
+@allure.description("Open policy page and check its url and header text.")
+@allure.tag("Url", "Header", "Policy", "Text")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_policy_page_url(open_policy_page):
     policy_page = open_policy_page
@@ -9,6 +14,11 @@ def test_policy_page_url(open_policy_page):
         "Incorrect privacy policy page url"
 
 
+@allure.title("Test check 'go to google policy link' is functional")
+@allure.description("Open policy page and go to the google policies page via link."
+                    " Check its url and first paragraph text. ")
+@allure.tag("Url", "Paragraph", "Policy", "Text", "Link")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_go_to_google_policies_link(open_policy_page):
     policy_page = open_policy_page
@@ -21,6 +31,10 @@ def test_go_to_google_policies_link(open_policy_page):
     assert policy_page.get_page_url() == "https://policies.google.com/privacy?hl=en", "Incorrect google policy page url"
 
 
+@allure.title("Test warning text about using personal data")
+@allure.description("Open policy page and check there is text about using personal data.")
+@allure.tag("Policy", "Text", "Personal data", "Warning")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_warning_about_using_personal_data(open_policy_page):
     policy_page = open_policy_page
@@ -33,6 +47,10 @@ def test_warning_about_using_personal_data(open_policy_page):
         "The warning about using personal data is incomplete or missing"
 
 
+@allure.title("Test personal data list info")
+@allure.description("Open policy page and check the number of clauses about personal data and its text.")
+@allure.tag("Policy", "Text", "Personal data", "List", "Count")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_personal_data_list(open_policy_page):
     policy_page = open_policy_page
@@ -48,6 +66,10 @@ def test_personal_data_list(open_policy_page):
         "Should see: Cookies and Usage"
 
 
+@allure.title("Test advert policy page")
+@allure.description("Open policy page and go to advert policy page via link. Check its url and introduction text.")
+@allure.tag("Policy", "Text", "Advert", "Url")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_advert_policy(open_policy_page):
     policy_page = open_policy_page
@@ -60,6 +82,11 @@ def test_advert_policy(open_policy_page):
     assert policy_page.get_page_url() == "https://youradchoices.ca/", "Incorrect advertising policy url"
 
 
+@allure.title("Test usage policy page")
+@allure.description("Open policy page and go to usage policy page via link. Check its url."
+                    " Also check text about citations and illustrations.")
+@allure.tag("Policy", "Text", "Url", "Usage")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_usage_policy(open_policy_page):
     policy_page = open_policy_page
