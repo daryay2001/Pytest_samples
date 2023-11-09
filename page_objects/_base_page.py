@@ -5,7 +5,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 
+from utilities.deco import auto_step
 
+
+@auto_step
 class BasePage:
     def __init__(self, driver: WebDriver):
         self.driver = driver

@@ -1,7 +1,9 @@
 from selenium.webdriver.common.by import By
 from page_objects._base_page import BasePage
+from utilities.deco import auto_step
 
 
+@auto_step
 class MainPage:
     def __init__(self, driver):
         self._page = BasePage(driver)
@@ -85,7 +87,7 @@ class MainPage:
         if my_word is None:
             my_word = self.__word_to_find
         try:
-            el_frame = self._page.wait_element_is_visible(self.__loc_iframe)
+            el_frame = self._page.wait_element_is_visible(self.__loc_iframe, timeout=7)
             self._page.driver.switch_to.frame(el_frame)
             self._page.send_keys(self.__loc_forum_search_input, my_word)
             self._page.click(self.__loc_add_topic_btn)

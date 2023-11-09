@@ -1,7 +1,10 @@
 from selenium.webdriver.common.by import By
 from page_objects._base_page import BasePage
+from utilities.allure_logger import log_json
+from utilities.deco import auto_step
 
 
+@auto_step
 class StorePage:
     def __init__(self, driver):
         self._page = BasePage(driver)
@@ -31,6 +34,7 @@ class StorePage:
             "sale": self._page.get_text_with_index(self.__loc_under_books_text, index),
             "price": self._page.get_text_with_index(self.__loc_books_price, index)
         }
+        log_json(data, name='item_info')
         return data
 
     def button_show_more_get_count(self):

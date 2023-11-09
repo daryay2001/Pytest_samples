@@ -1,6 +1,12 @@
 import pytest
+import allure
 
 
+@allure.title("Test clean code page")
+@allure.description("Open refactor page, go to the clean code page by btn."
+                    " Check the first paragraph is in page text and check url of the page.")
+@allure.tag("Refactor", "Text", "Url")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_clean_code_page(open_refactor_page):
     page = open_refactor_page
@@ -11,6 +17,10 @@ def test_clean_code_page(open_refactor_page):
     assert clean_code_paragr in page._page.get_page_source(), "No refactoring definition"
 
 
+@allure.title("Test url of the privacy policy page")
+@allure.description("Open refactor page, go to privacy policy page via link. Check its url")
+@allure.tag("Refactor", "Url", "Policy", "Link")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_privacy_policy_page_load(open_refactor_page):
     page = open_refactor_page
@@ -18,6 +28,11 @@ def test_privacy_policy_page_load(open_refactor_page):
     assert page.get_page_url() == "https://refactoring.guru/uk/privacy-policy", "Incorrect url for policy"
 
 
+@allure.title("Test home button is functioning")
+@allure.description("Open refactor page, go to the, dirty code page,"
+                    " go to main page via 'home button'. Check main page url.")
+@allure.tag("Refactor", "Url", "Button", "Home page")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.smoke
 def test_home_btn(open_refactor_page):
     page = open_refactor_page
@@ -26,6 +41,11 @@ def test_home_btn(open_refactor_page):
     assert page.get_page_url() == "https://refactoring.guru/", "Incorrect url, should be main page"
 
 
+@allure.title("Test go to technical debt article page")
+@allure.description("Open refactor page, go to start from the beginning btn,"
+                    " go to technical debt page via btn,  go to technical debt article page. Check its url.")
+@allure.tag("Refactor", "Url", "Technical", "Article")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_go_to_techn_debt_article(open_refactor_page):
     page = open_refactor_page
@@ -35,6 +55,11 @@ def test_go_to_techn_debt_article(open_refactor_page):
     assert page.get_page_url() == "https://wiki.c2.com/?WardExplainsDebtMetaphor", "Incorrect article url"
 
 
+@allure.title("Test check code containers count")
+@allure.description("Open refactor page, click 'show more technics' btn,"
+                    " go to extract method via link, check number of code containers.")
+@allure.tag("Refactor", "Url", "Number", "Code", "Container")
+@allure.label("owner", "Mary Gold")
 @pytest.mark.regression
 def test_check_code_containers_count(open_refactor_page):
     page = open_refactor_page
