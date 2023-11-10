@@ -41,7 +41,7 @@ def pytest_runtest_makereport(item):
     setattr(item, "rep_" + rep.when, rep)
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def env(request):
     _env_name = request.config.getoption("--env")
     with open(f"{ROOT_PATH}/configs/{_env_name}.json") as f:

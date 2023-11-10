@@ -4,5 +4,8 @@
   "store_page_url": "https://refactoring.guru/uk/store",
   "patterns_url": "https://refactoring.guru/uk/design-patterns",
   "privacy_policy_url": "https://refactoring.guru/uk/privacy-policy",
-  "browser_id": 1
+  "browser_id": 1,
+  "db_param": {
+    "path": "/db/test.db"
+  }
 }
