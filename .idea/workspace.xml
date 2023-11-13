@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="improved api tests and added iframe test to main page" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added idea to gitignore">
+      <change afterPath="$PROJECT_DIR$/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/sqlite_pack/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/sqlite_pack/_base_db_connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/sqlite_pack/phones_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/test_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/sqlite_cm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/deco.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/deco.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,108 +45,108 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hw20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hw21",
+    "last_opened_file_path": "C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kirit\PycharmProjects\Pytest_samples\allure-results" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_notes_api.test_page_not_found_empty_id">
-    <configuration name="pytest for test_main_page.test_iframe_add_forum_topic" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="pytest for test_db.test_add_phone_without_model_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_16" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main_page.test_iframe_add_forum_topic&quot;" />
+      <option name="_new_target" value="&quot;test_db.test_add_phone_without_model_fails&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_notes_api.test_change_note_status_to_str" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_db.test_delete_phone" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_20" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_change_note_status_to_str&quot;" />
+      <option name="_new_target" value="&quot;test_db.test_delete_phone&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_notes_api.test_get_all_notes" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_db.test_delete_phone_by_wrong_id_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_20" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_get_all_notes&quot;" />
+      <option name="_new_target" value="&quot;test_db.test_delete_phone_by_wrong_id_fails&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_notes_api.test_get_all_notes_without_token" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_db.test_get_phone_by_invalid_brand_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_20" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_get_all_notes_without_token&quot;" />
+      <option name="_new_target" value="&quot;test_db.test_get_phone_by_invalid_brand_fails&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_notes_api.test_page_not_found_empty_id" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_db.test_update_phone_model" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_20" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notes_api.test_page_not_found_empty_id&quot;" />
+      <option name="_new_target" value="&quot;test_db.test_update_phone_model&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_notes_api.test_page_not_found_empty_id" />
-        <item itemvalue="Python tests.pytest for test_main_page.test_iframe_add_forum_topic" />
-        <item itemvalue="Python tests.pytest for test_notes_api.test_get_all_notes_without_token" />
-        <item itemvalue="Python tests.pytest for test_notes_api.test_get_all_notes" />
-        <item itemvalue="Python tests.pytest for test_notes_api.test_change_note_status_to_str" />
+        <item itemvalue="Python tests.pytest for test_db.test_delete_phone_by_wrong_id_fails" />
+        <item itemvalue="Python tests.pytest for test_db.test_add_phone_without_model_fails" />
+        <item itemvalue="Python tests.pytest for test_db.test_get_phone_by_invalid_brand_fails" />
+        <item itemvalue="Python tests.pytest for test_db.test_delete_phone" />
+        <item itemvalue="Python tests.pytest for test_db.test_update_phone_model" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699202683191</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added idea to gitignore">
+      <option name="closed" value="true" />
+      <created>1699541363838</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699541363838</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +227,7 @@
     <MESSAGE value="added local xml files" />
     <MESSAGE value="improved test notes api" />
     <MESSAGE value="improved api tests and added iframe test to main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved api tests and added iframe test to main page" />
+    <MESSAGE value="added idea to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added idea to gitignore" />
   </component>
 </project>
