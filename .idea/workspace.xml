@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added idea to gitignore">
-      <change afterPath="$PROJECT_DIR$/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlite_pack/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlite_pack/_base_db_connector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlite_pack/phones_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_23/test_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/sqlite_cm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_24/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_24/my_build/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/deco.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/deco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -49,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "hw21",
+    "git-widget-placeholder": "hw24",
     "last_opened_file_path": "C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
