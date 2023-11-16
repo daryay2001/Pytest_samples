@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Added Dockerfile">
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/config/browsers.json" afterDir="false" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Save changes before change Edge to Firefox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/driver_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/driver_factory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,29 +116,29 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_db.test_update_phone_model" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_refactor_page.test_go_to_techn_debt_article" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_16" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_db.test_update_phone_model&quot;" />
+      <option name="_new_target" value="&quot;test_refactor_page.test_go_to_techn_debt_article&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_refactor_page.test_go_to_techn_debt_article" />
         <item itemvalue="Python tests.pytest for test_db.test_delete_phone_by_wrong_id_fails" />
         <item itemvalue="Python tests.pytest for test_db.test_add_phone_without_model_fails" />
         <item itemvalue="Python tests.pytest for test_db.test_get_phone_by_invalid_brand_fails" />
         <item itemvalue="Python tests.pytest for test_db.test_delete_phone" />
-        <item itemvalue="Python tests.pytest for test_db.test_update_phone_model" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699989997095</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Save changes before change Edge to Firefox">
+      <option name="closed" value="true" />
+      <created>1700143554031</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700143554031</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +237,7 @@
     <MESSAGE value="improved api tests and added iframe test to main page" />
     <MESSAGE value="added idea to gitignore" />
     <MESSAGE value="Added Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Dockerfile" />
+    <MESSAGE value="Save changes before change Edge to Firefox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save changes before change Edge to Firefox" />
   </component>
 </project>

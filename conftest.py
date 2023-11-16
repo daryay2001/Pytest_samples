@@ -17,6 +17,8 @@ from utilities.json_to_dict import DictToClass
 
 def pytest_addoption(parser):
     parser.addoption("--env", action="store", default="dev", help="Choose your env")
+    parser.addoption('--hub', action='store', default='False', help='Run test in container Selenoid')
+    parser.addoption('--headless', action='store', default='False', help='Run test in headless mode')
 
 
 def pytest_configure(config):
@@ -51,7 +53,11 @@ def env(request):
 
 @pytest.fixture
 def create_driver(env, request):
-    driver = DriverFactory(env.browser_id).get_driver()
+    driver = DriverFactory(
+        browser_id=env.browser_id,
+        hub=eval(request.config.getoption('--hub')),
+        headless=eval(request.config.getoption('--headless'))
+    ).get_driver()
     driver.maximize_window()
     driver.get(env.url)
     yield driver
