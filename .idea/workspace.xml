@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added idea to gitignore">
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_24/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_24/my_build/Dockerfile" afterDir="false" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Added Dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "hw24",
-    "last_opened_file_path": "C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw24&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kirit\PycharmProjects\Pytest_samples\allure-results" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.pytest for test_db.test_add_phone_without_model_fails">
     <configuration name="pytest for test_db.test_add_phone_without_model_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699541363838</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Dockerfile">
+      <option name="closed" value="true" />
+      <created>1699989997095</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699989997095</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +225,7 @@
     <MESSAGE value="improved test notes api" />
     <MESSAGE value="improved api tests and added iframe test to main page" />
     <MESSAGE value="added idea to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added idea to gitignore" />
+    <MESSAGE value="Added Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Dockerfile" />
   </component>
 </project>
