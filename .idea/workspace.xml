@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Save changes before change Edge to Firefox">
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Added Firefox and changes in driver_factory.py">
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/grid-router/quota/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/grid-router/users.htpasswd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/driver_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/driver_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Lesson_25/selenoid/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +38,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "hw25",
-    "last_opened_file_path": "C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw25&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kirit/PycharmProjects/Pytest_samples/allure-results&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kirit\PycharmProjects\Pytest_samples\allure-results" />
@@ -113,6 +114,22 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_db.test_get_phone_by_invalid_brand_fails&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_policy_page.test_usage_policy" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="Pytest_samples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_16" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_policy_page.test_usage_policy&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -215,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700143554031</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Firefox and changes in driver_factory.py">
+      <option name="closed" value="true" />
+      <created>1700154731871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700154731871</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +263,7 @@
     <MESSAGE value="added idea to gitignore" />
     <MESSAGE value="Added Dockerfile" />
     <MESSAGE value="Save changes before change Edge to Firefox" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save changes before change Edge to Firefox" />
+    <MESSAGE value="Added Firefox and changes in driver_factory.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Firefox and changes in driver_factory.py" />
   </component>
 </project>
