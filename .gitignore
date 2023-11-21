@@ -164,3 +164,4 @@ allure-report/
 allure-results/
 
 .idea/
+/tests/Lesson_26/selenium-server-4.15.0.jar
