@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Added Firefox and changes in driver_factory.py">
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/grid-router/quota/test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/grid-router/users.htpasswd" afterDir="false" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="Added GGR and it is working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Lesson_25/selenoid/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Lesson_25/selenoid/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
       <recent name="C:\Users\kirit\PycharmProjects\Pytest_samples\allure-results" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.pytest for test_policy_page.test_usage_policy">
     <configuration name="pytest for test_db.test_add_phone_without_model_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700154731871</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added GGR and it is working">
+      <option name="closed" value="true" />
+      <created>1700494598527</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700494598527</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,6 +268,7 @@
     <MESSAGE value="Added Dockerfile" />
     <MESSAGE value="Save changes before change Edge to Firefox" />
     <MESSAGE value="Added Firefox and changes in driver_factory.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Firefox and changes in driver_factory.py" />
+    <MESSAGE value="Added GGR and it is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GGR and it is working" />
   </component>
 </project>
