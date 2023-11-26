@@ -165,3 +165,4 @@ allure-results/
 
 .idea/
 /tests/Lesson_26/selenium-server-4.15.0.jar
+/tests/Lesson_27/jenkins/data/
