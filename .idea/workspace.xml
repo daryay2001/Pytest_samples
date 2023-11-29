@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added command comment for starting container">
-      <change afterPath="$PROJECT_DIR$/tests/Lesson_28/__init__.py" afterDir="false" />
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added smoke_pipeline.jenkinsfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701247277313</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added smoke_pipeline.jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1701248083430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701248083430</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,6 +323,7 @@
     <MESSAGE value="Added smoke marks to api tests" />
     <MESSAGE value="change hub for connection between ggr and jenkins" />
     <MESSAGE value="added command comment for starting container" />
-    <option name="LAST_COMMIT_MESSAGE" value="added command comment for starting container" />
+    <MESSAGE value="added smoke_pipeline.jenkinsfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added smoke_pipeline.jenkinsfile" />
   </component>
 </project>

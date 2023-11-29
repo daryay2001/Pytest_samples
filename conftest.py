@@ -19,6 +19,7 @@ def pytest_addoption(parser):
     parser.addoption("--env", action="store", default="dev", help="Choose your env")
     parser.addoption('--hub', action='store', default='False', help='Run test in container Selenoid')
     parser.addoption('--headless', action='store', default='False', help='Run test in headless mode')
+    parser.addoption('--browser', action='store', default='1', help='Choose your browser (1 - Chrome, 2 - Firefox)')
 
 
 def pytest_configure(config):
@@ -54,7 +55,7 @@ def env(request):
 @pytest.fixture
 def create_driver(env, request):
     driver = DriverFactory(
-        browser_id=env.browser_id,
+        browser_id=int(request.config.getoption('--browser')),
         hub=eval(request.config.getoption('--hub')),
         headless=eval(request.config.getoption('--headless'))
     ).get_driver()
