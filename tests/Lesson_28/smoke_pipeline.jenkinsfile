@@ -1,0 +1,54 @@
+pipeline {
+    agent any
+    parameters {
+          string defaultValue: '-m smoke', description: 'example: -m smoke', name: 'markers'
+        }
+    stages {
+        stage('Setup requirements') {
+            steps {
+                sh '''#!/bin/bash
+                apt-get update
+                apt-get install -y python3
+                apt-get install -y python3-pip
+                apt install -y python3.11-venv
+                python3 -m venv venv
+                source venv/bin/activate
+                python3 -m pip install -r requirements.txt
+                '''
+            }
+        }
+        stage('Run unit tests'){
+            steps {
+                sh '''#!/bin/bash
+                source venv/bin/activate
+                python3 -m pytest -vv $markers tests/Lesson_14
+                '''
+            }
+        }
+
+        stage('Run api tests'){
+            steps {
+                sh '''#!/bin/bash
+                source venv/bin/activate
+                python3 -m pytest -vv $markers tests/Lesson_20
+                '''
+            }
+        }
+
+        stage('Run ui tests'){
+            steps {
+                sh '''#!/bin/bash
+                source venv/bin/activate
+                python3 -m pytest -vv $markers --hub True --headless True tests/Lesson_16/test_main_page.py
+                '''
+            }
+        }
+
+        stage('Report'){
+            steps {
+                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+            }
+        }
+
+    }
+}

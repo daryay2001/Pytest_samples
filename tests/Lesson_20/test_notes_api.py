@@ -1,4 +1,7 @@
 from http import HTTPStatus
+
+import pytest
+
 from api_collections.data_classes.notes_dataclass import NotesData
 from api_collections.schemas.notes_api import NotesApi
 import allure
@@ -43,6 +46,7 @@ def test_get_note_by_id(get_new_note_id, get_mock_note_by_id):
     assert notes_data.get_dict() == actual_data_from_db.get_dict()
 
 
+@pytest.mark.smoke
 @allure.title("Test fail post note without title")
 def test_post_new_note_without_title():
     payload = NotesData.get_fake_note_payload()
@@ -64,6 +68,7 @@ def test_update_existing_note(get_new_note_id):
     assert new_note_resp.status_code == 200, f"Request fail! {resp.text}"
 
 
+@pytest.mark.smoke
 @allure.title("Test fail post new note without description")
 def test_post_new_note_without_description(get_fake_note_payload):
     payload = get_fake_note_payload
@@ -73,6 +78,7 @@ def test_post_new_note_without_description(get_fake_note_payload):
     assert resp.status_code == 400, f"Incorrect error status code {resp.text}"
 
 
+@pytest.mark.smoke
 @allure.title("Test post fail empty note")
 def test_post_fail_empty_note():
     payload = {}
@@ -90,6 +96,7 @@ def test_delete_note_by_id(get_new_note_id):
     assert resp.status_code == HTTPStatus.OK, f"Request fail! {resp.text}"
 
 
+@pytest.mark.smoke
 @allure.title("Test page not found empty id")
 def test_page_not_found_empty_id():
     _id = ""
