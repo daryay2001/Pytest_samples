@@ -1,0 +1,34 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes/6569f32903e2430141920da4",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"1ae-O9qr6GjZR1kynNyLs54vE4xCcbc\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Fri, 01 Dec 2023 14:52:25 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 200,
+   "RESPONSE_BODY": {
+      "success": true,
+      "status": 200,
+      "message": "Note successfully retrieved",
+      "data": {
+         "id": "6569f32903e2430141920da4",
+         "title": "Rate use push.",
+         "description": "Talk occur understand unit relate sell should experience want save song kitchen speech cause end page social huge nature.",
+         "category": "Personal",
+         "completed": false,
+         "created_at": "2023-12-01T14:52:25.125Z",
+         "updated_at": "2023-12-01T14:52:25.125Z",
+         "user_id": "6543a006d1562c00f728f2ac"
+      }
+   }
+}
