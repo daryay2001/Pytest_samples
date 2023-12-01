@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="added smoke_pipeline.jenkinsfile">
+    <list default="true" id="ae463fbd-d14b-404e-bab0-0313d61cffb3" name="Changes" comment="conftest addoption --browser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <recent name="C:\Users\kirit\PycharmProjects\Pytest_samples\allure-results" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_main_page.test_go_to_pattern_page_btn">
+  <component name="RunManager" selected="Python tests.pytest for test_main_page.test_email_form">
     <configuration name="pytest for test_db.test_add_phone_without_model_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,19 +81,19 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_db.test_get_phone_by_invalid_brand_fails" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_main_page.test_email_form" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Pytest_samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_23" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/Lesson_16" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_db.test_get_phone_by_invalid_brand_fails&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_email_form&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -148,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_main_page.test_email_form" />
         <item itemvalue="Python tests.pytest for test_main_page.test_go_to_pattern_page_btn" />
         <item itemvalue="Python tests.pytest for test_refactor_page.test_go_to_techn_debt_article" />
         <item itemvalue="Python tests.pytest for test_db.test_delete_phone_by_wrong_id_fails" />
         <item itemvalue="Python tests.pytest for test_db.test_add_phone_without_model_fails" />
-        <item itemvalue="Python tests.pytest for test_db.test_get_phone_by_invalid_brand_fails" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701248083430</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="conftest addoption --browser">
+      <option name="closed" value="true" />
+      <created>1701254503378</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701254503378</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,6 +331,7 @@
     <MESSAGE value="change hub for connection between ggr and jenkins" />
     <MESSAGE value="added command comment for starting container" />
     <MESSAGE value="added smoke_pipeline.jenkinsfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="added smoke_pipeline.jenkinsfile" />
+    <MESSAGE value="conftest addoption --browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="conftest addoption --browser" />
   </component>
 </project>
