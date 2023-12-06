@@ -1,0 +1,34 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"1a4-XUKK8eLBWfgQ2kS5URz8RD2UjOo\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Wed, 06 Dec 2023 17:34:55 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 200,
+   "RESPONSE_BODY": {
+      "success": true,
+      "status": 200,
+      "message": "Note successfully created",
+      "data": {
+         "id": "6570b0bf03e2430141922e2a",
+         "title": "I worry though boy.",
+         "description": "Either trial through themselves market machine always amount effect head dark energy chair perform place person.",
+         "category": "Work",
+         "completed": false,
+         "created_at": "2023-12-06T17:34:55.342Z",
+         "updated_at": "2023-12-06T17:34:55.342Z",
+         "user_id": "6543a006d1562c00f728f2ac"
+      }
+   }
+}

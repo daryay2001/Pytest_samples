@@ -1,0 +1,34 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes/6570b0c003e2430141922e37",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"17d-li2aYhN3PlQQ2Lq+zQWVhGbbXZY\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Wed, 06 Dec 2023 17:34:56 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 200,
+   "RESPONSE_BODY": {
+      "success": true,
+      "status": 200,
+      "message": "Note successfully retrieved",
+      "data": {
+         "id": "6570b0c003e2430141922e37",
+         "title": "Chance trouble space.",
+         "description": "World green practice father during born drop respond within meet.",
+         "category": "Personal",
+         "completed": false,
+         "created_at": "2023-12-06T17:34:56.256Z",
+         "updated_at": "2023-12-06T17:34:56.256Z",
+         "user_id": "6543a006d1562c00f728f2ac"
+      }
+   }
+}
