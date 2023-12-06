@@ -1,0 +1,34 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"19b-xRHZtRnxSDJKcCfelwF+VW7rbuM\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Wed, 06 Dec 2023 15:59:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 200,
+   "RESPONSE_BODY": {
+      "success": true,
+      "status": 200,
+      "message": "Note successfully created",
+      "data": {
+         "id": "65709a7d03e2430141922d95",
+         "title": "Hear phone authority try early learn.",
+         "description": "Notice purpose all wife special respond whom third strong student moment fear reason.",
+         "category": "Work",
+         "completed": false,
+         "created_at": "2023-12-06T15:59:57.673Z",
+         "updated_at": "2023-12-06T15:59:57.673Z",
+         "user_id": "6543a006d1562c00f728f2ac"
+      }
+   }
+}

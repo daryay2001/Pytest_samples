@@ -1,0 +1,34 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes/65709a7d03e2430141922d99",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"17b-vScdpm5RvmiqyCB+l6fRT89Q2bE\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Wed, 06 Dec 2023 15:59:58 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 200,
+   "RESPONSE_BODY": {
+      "success": true,
+      "status": 200,
+      "message": "Note successfully retrieved",
+      "data": {
+         "id": "65709a7d03e2430141922d99",
+         "title": "This prove he memory station per.",
+         "description": "Fear window beat way trial energy blood whether factor.",
+         "category": "Work",
+         "completed": false,
+         "created_at": "2023-12-06T15:59:57.948Z",
+         "updated_at": "2023-12-06T15:59:57.948Z",
+         "user_id": "6543a006d1562c00f728f2ac"
+      }
+   }
+}
