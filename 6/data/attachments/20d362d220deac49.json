@@ -1,0 +1,34 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"18b-XfxohALSb6Co0Pj6dMhnilR1vy0\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Thu, 07 Dec 2023 09:16:24 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 200,
+   "RESPONSE_BODY": {
+      "success": true,
+      "status": 200,
+      "message": "Note successfully created",
+      "data": {
+         "id": "65718d6803e2430141922f2d",
+         "title": "Many speak use leader degree sure.",
+         "description": "Where media improve especially control major should off less hand could.",
+         "category": "Home",
+         "completed": false,
+         "created_at": "2023-12-07T09:16:24.512Z",
+         "updated_at": "2023-12-07T09:16:24.512Z",
+         "user_id": "6543a006d1562c00f728f2ac"
+      }
+   }
+}

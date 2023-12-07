@@ -1,0 +1,24 @@
+{
+   "URL": "https://practice.expandtesting.com/notes/api/notes/1670631",
+   "HEADERS": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH",
+      "access-control-allow-headers": "Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token",
+      "content-type": "application/json; charset=utf-8",
+      "content-encoding": "gzip",
+      "etag": "W/\"45-6ZxFHn6LXbRQn6xIPMG/1kr6zFI\"",
+      "set-cookie": "express:sess=eyJmbGFzaCI6e319; path=/; httponly, express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly",
+      "date": "Thu, 07 Dec 2023 09:16:27 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+   },
+   "ELAPSED": 0,
+   "STATUS_CODE": 400,
+   "RESPONSE_BODY": {
+      "success": false,
+      "status": 400,
+      "message": "Note ID must be a valid ID"
+   }
+}
